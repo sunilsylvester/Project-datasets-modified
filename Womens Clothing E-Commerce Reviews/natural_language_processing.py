@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Importing the dataset
-dataset = pd.read_csv('Womens Clothing E-Commerce Reviews.csv',index_col=0)
+dataset = pd.read_csv('C://Users//sylve//Downloads//Machine learning//Dataset//Project datasets modified//Womens Clothing E-Commerce Reviews//Womens Clothing E-Commerce Reviews.csv',index_col=0)
 
 dataset.head()
 
@@ -57,10 +57,10 @@ y_pred = classifier.predict(X_test)
 from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
 
-Accuracy = (TP + TN) / (TP + TN + FP + FN)
-Precision = TP / (TP + FP)
-Recall = TP / (TP + FN)
-F1Score = 2 * Precision * Recall / (Precision + Recall)
+#Accuracy = (TP + TN) / (TP + TN + FP + FN)
+#Precision = TP / (TP + FP)
+#Recall = TP / (TP + FN)
+#F1Score = 2 * Precision * Recall / (Precision + Recall)
 
 accuracy = (522+1033)/(522+1033+2197+181)
 accuracy
